@@ -1,0 +1,627 @@
+/*Universal Styles*/
+
+html {
+  font-size: 16px;
+  font-family: Oxygen, sans-serif;
+}
+
+/*Colmar Academy Header*/
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 4rem;
+  z-index: 5;
+}
+
+.company img{
+  height: 3rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.company .colmar, .company .academy {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+
+.company .colmar {
+  color: #47453D; 
+  font-weight: 600;
+}
+
+.company .academy {
+  color: #B6BDA2;
+}
+
+.company {
+    display: flex;
+}
+
+.mobile ul {
+  display: none;
+}
+
+.desktop ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -3rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.desktop li {
+  padding-left: 1rem;
+  margin-right: 2rem;
+}
+
+.desktop a {
+  color: #47453D;
+}
+
+.desktop a:hover {
+  color: rgb(7, 74, 120);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop ul {
+    display: none;
+  }
+  .content span {
+    display: none;
+  }
+  .mobile ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -3.2rem;
+  }
+  .mobile img {
+    height: 2rem;
+  }
+  .mobile li {
+    padding-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+    .mobile img {
+      height: 1.5rem;
+    }
+    .mobile li {
+      padding-left: 1rem;
+    }
+}
+
+/*Colmar Academy Banner*/
+
+.container-fluid {
+  background-color: #C6C5DB;
+  margin-top: 1rem;
+  height: 50rem;
+  display: flex;
+}
+
+.container-fluid img {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  width: 60.5%;
+}
+
+.texts {
+  color: #47453D;
+  padding-left: 2rem;
+  margin-top: 16rem;
+}
+
+.texts h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.texts h4 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.texts .btn {
+  width: 100%;
+}
+
+.texts .btn:hover {
+  background-color: #47453D;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-fluid img {
+    padding-top: 1.5rem;
+    width: 27rem;
+    height: 37rem;
+  }
+  .container-fluid {
+    height: 40rem;
+  }
+  .texts {
+    padding-left: 1.5rem;
+    margin-top: 7rem;
+  }
+  .texts h2 {
+    font-size: 2.2rem;
+  }
+  .texts h4 {
+    font-size: 1rem;
+  }
+  .texts .btn {
+    width: 12rem;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .container-fluid img {
+    width: 50%;
+    margin-top: 2.3rem;
+    }
+   .texts {
+     margin-top: 10rem;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+  .container-fluid img {
+    width: 17rem;
+    height: 27rem;
+  }
+  .texts {
+    text-align: center;
+    margin-top: 2rem;
+    margin-right: 1rem;
+  }
+  .texts h2 {
+    font-size: 2rem;
+  }
+  .container-fluid {
+    display: block;
+    background-color: #C6C5DB;
+    margin-top: -1.9rem;
+    height: 50rem;
+   }
+  .container-fluid img {
+    width: 100%;
+    padding: 0;
+    margin-top: 4rem;
+   }
+  .texts .btn {
+    width: 100%;
+    justify-content: center;
+   }
+}
+
+/*Colmar Academy Main Section*/
+
+.main-section {
+  margin-left: 1.5rem;
+}
+
+.main-section img {
+  width: 87%;
+  margin-top: -5rem;
+}
+
+.main-section h2 {
+  font-weight: 900;
+  margin-top: 3rem;
+  font-size: 2.4rem;
+  width: 84%;
+}
+
+.main-section p {
+  width: 90%;
+  margin-top: 2rem;
+  color: #63695A;
+}
+
+.main-section h6 {
+  margin-top: 4rem;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+    margin-top: 5rem;
+}
+
+aside {
+  margin-top: -5rem;
+  margin-right: 3rem;
+  width: 60%;
+}
+
+.device {
+  width: 11rem;
+  height: 11rem;
+  margin-bottom: 2rem;
+}
+
+.phone {
+  display: none;
+}
+
+.orientation, .campus, .lecture {
+  display: flex;
+}
+
+.orientation .list, .campus .list, .lecture .list {
+  margin-left: 1rem;
+}
+
+.list {
+  margin-top: 0.5rem;
+}
+
+.list .title {
+  font-size: 1.4rem;
+  color: #3A3D34;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.list .description {
+  color: #63695A;
+  margin-bottom: 0.5rem;
+}
+
+.list .read-more {
+  color: rgba(65, 154, 255, 0.7);
+}
+
+.list .read-more a:hover {
+  color: rgb(43, 77, 171);
+  text-decoration: none;
+}
+
+.list .read-more {
+  cursor: move;
+}
+
+@media only screen and (max-width: 768px) {
+  .device {
+    width: 7rem;
+    height: 7rem;
+    margin-top: 0.7rem;
+  }
+  .list .title {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .description {
+    font-size: 0.7rem;  
+    }
+  .main-section img {
+    margin-top: -4.3rem;
+  }
+  .main-section h2 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+  .phone {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .main-section {
+    display: none;
+  }
+  .main-information {
+    width: 50rem;
+    background-color: hsla(101, 30%, 50%, 0.1);
+  }
+  .orientation, .campus, .lecture {
+    display: block;
+    margin-left: 1rem;
+  }
+  .device {
+    display: none;
+  }
+  .phone {
+    display: block;
+    width: 25rem;
+    margin-top: 3rem;
+  }
+  .list .title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  .list .description {
+    font-size: 0.9rem;
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+    .phone {
+      width: 17rem;
+    }
+    .list .description {
+      width: 17rem;
+    }
+}
+
+/*Colmar Academy Courses*/
+
+.container {
+  margin-top: 4rem;
+  background-color: rgba(113, 115, 117, 0.2);
+}
+
+.container h2 {
+  text-align: center;
+  font-weight: 900;
+  line-height: 3;
+  font-size: 2.5rem;
+  color: #47453D;
+}
+
+.container .img-fluid {
+  height: auto;
+  max-width: 100%;
+}
+
+.col-xs-12, .col-md-6, .col-lg-4 {
+  margin-bottom: 2rem;
+}
+
+.details .major {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem;
+  padding-top: 1rem;
+}
+
+.major a {
+  color: CadetBlue;
+}
+
+.container .course {
+  text-transform: uppercase;
+  margin-left: 2rem;
+  color: #5B5D6E;
+}
+
+.container .module {
+  color: #5B5D6E;
+  margin-left: 2rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#software {
+  padding-bottom: 2rem;
+}
+
+.major a:hover {
+  color: #434552;
+}
+
+.major a:visited {
+  color: #437E52;
+}
+
+.details {
+  background-color: white;
+  margin-top: -2rem;
+}
+
+.add {
+  padding-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 991px) {
+  .details {
+    width: 53.2rem;
+  }
+  .container h2 {
+    text-align: center;
+  }
+  .details {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 578px) {
+  .details {
+    width: 100%;
+  }
+  .container h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .container h2 {
+    font-size: 2rem;
+    line-height: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .img-fluid, .course, .module {
+    display: none;
+  }
+  .details {
+    background-color: rgba(113, 115, 117, 0.4);
+    height: 3.5rem;
+    width: 100%;
+  }
+  .details .major {
+    font-size: 1.2rem;
+  }
+  .details .major a {
+    color: #44444A;
+    text-decoration: none;
+  }
+  .details .major a:visited {
+    color: MidnightBlue;
+  }
+  .details .major a:hover {
+    color: rgb(43, 77, 171);
+  }
+}
+
+/*Colmar Academy Thesis*/
+
+.method .link {
+  display: none;
+}
+
+.method .col-lg-12 {
+  text-align: center;
+  font-weight: 900;
+  line-height: 3;
+  font-size: 2.5rem;
+  color: #47453D;
+}
+
+.thesis {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.fisma, .research {
+  display: flex;
+}
+
+.sidebar .point {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sidebar .point a {
+  text-decoration: none;
+  color: #3A3D34;
+}
+
+.point a:hover {
+  color: rgb(43, 77, 171);
+}
+
+.sidebar .note {
+  color: #63695A;
+}
+
+.video {
+  width: 100%;
+  margin-left: 1.5rem;
+}
+
+.thesis-sidebar img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 4rem;
+ }
+
+.sidebar {
+  margin-left: 1rem;
+}
+
+.video .desc {
+  margin-top: 1rem;
+  color: #63695A;
+  width: 90%;
+}
+
+.video h3 {
+  font-weight: 900;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.thesis-sidebar {
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 1099px) {
+  .thesis-sidebar img {
+    width: 60%;
+    margin-bottom: 3rem;
+ }
+  .sidebar .point {
+    font-size: 1.5rem;
+ }
+   .sidebar .note {
+    font-size: 0.9rem;
+ }
+}
+
+@media only screen and (max-width: 997px) {
+  .fisma, .research {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .thesis-sidebar img {
+    margin-left: 1rem;
+    width: 100%;
+  }
+  .sidebar {
+    margin-top: -2rem;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .thesis-sidebar, .video h3, .video .desc, .method .col-lg-12 {
+    display: none;
+  }
+  .method .link {
+    justify-content: center;
+    display: flex;
+    font-weight: 900;
+    line-height: 1.2;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .method .link a {
+    color: #47453D;
+    text-decoration: none;
+  }
+  .method .link a:hover {
+    color: #449795;
+  }
+  .video video {
+    margin-bottom: 5rem;
+    width: 100%;
+    margin-left: 1.5rem;
+  }
+}
+
+/*Colmar Academy Footer*/
+
+footer {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #E1E5FF;
+  width: 90%;
+  padding-top: 2rem;
+  color: #63695A;
+  font-size: 1rem;
+  position: absolute;
+}
+
+.footer .terms {
+  float: right;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (max-width: 476px) {
+ .footer .terms {
+   display: none;
+  }
+}
